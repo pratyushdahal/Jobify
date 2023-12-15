@@ -12,6 +12,11 @@ body{
     height: auto;
     overflow-x: hidden;
 }
+.show-scroll{
+    background-color: black;
+    transition: all .8s ease-in-out;
+    transform: translate3d(0,0,0);
+}
 
 .navigation{
     width: 100%;
@@ -21,8 +26,8 @@ body{
     align-items: center;
     top: 0;
     left: 0;
-    z-index: 10;
-    /* background:whitesmoke; */
+    z-index: 100;
+    padding: 20px 0px;
     position: fixed;
 }
 .navigation ul li{
@@ -33,10 +38,9 @@ body{
 
 .navigation ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 16px;
     font-family: cursive;
-    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
     letter-spacing: 2px;
 }
 .navigation a{
@@ -44,7 +48,7 @@ body{
     font-size: 20px;
 }
 .navigation span{
-    color:black;
+    color:white;
 }
 ul.navbar {
     margin-right: -100px;
@@ -53,7 +57,7 @@ ul.navbar {
     letter-spacing: 2.5px;
     font-size: 30px;
     font-family: Cherry Bomb One;
-    margin-left: -120px;
+    color: blue;
 }
 li.signin {
     border: 2px solid blue;
@@ -71,22 +75,20 @@ li.signin:hover{
 header{
     width: 100vw;
     height: 100vh;
-    background-image: url("image/tem1.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("image/imgwork2.jpg") ;
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-.title{
+h1.title{
     position: absolute;
     top: 9rem;
     left: 9rem;
     font-size: 60px;
     font-weight:lighter;
-    color:black;
-    /* font-family: nunito; */
-    /* font-family: 'Nanum Pen Script',cursive; */
-    /* font-family: poppins; */
+    z-index: 40;
+    color:white;
     font-family: 'Cherry Bomb One',cursive;
 }
 .title span{
@@ -100,6 +102,7 @@ header{
     font-size: 26px;
     font-family: cursive;
     border: 2.5px solid blue;
+    color: white;
     height: 55px;
     width: 185px;
     border-radius: 15px;
@@ -297,4 +300,279 @@ button.\.buttonsignup:hover{
     text-align: center;
     margin-top: 30px;
     font-family: cursive;
+}
+/* companies page */
+h2.title {
+    margin: 75px 495px 35px;
+    font-size: 40px;
+}
+.companies_title>h2::after{
+    content: '';
+    width: 60px;
+    height: 5px;
+    border-radius: 3px;
+    background: blue;
+    position: absolute;
+    left: 40%;
+    bottom: -12px;
+}
+.logo-images>img {
+    width: 120px;
+}
+.logo_icons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0px 175px;
+}
+
+/* nextpage */
+
+img {
+    width: 75%;
+    padding: 51px 60px;
+}
+.section_third{
+    background:#EEEDED;
+    display: flex;
+    flex-direction: row;
+    padding: 5rem 0;
+}
+.sub-section-left{
+    width: 100%;
+}
+.sub-section-right{
+    width: 100%;
+    padding: 80px;
+}
+.sub-section-right>h3{
+    font-size: 35px;
+}
+.sub-section-right>p {
+    margin: 19px 5px;
+    font-size: 16px;
+    font-family: poppins;
+    font-weight: 500;
+    text-align: justify;
+}
+p.search {
+    text-align: center;
+    margin: 41px 0px 15px;
+    font-style: italic;
+    font-family: monospace;
+    font-weight: 500;
+}
+.buttons {
+    text-align: center;
+}
+button {
+    height: 47px;
+    width: 165px;
+    font-size: 25px;
+    font-family: cursive;
+    margin: 20px 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+button.btn-2{
+    background: blue;
+    border: none;
+}
+button.btn-2:hover{
+    transition: 0.6s ease-in-out;
+    transform: scale(1.1);
+}
+.btn-2 {
+    text-decoration: none;
+    color: white;
+}
+.btn-1>a{
+    text-decoration: none;
+    color: black;
+}
+button.btn-1:hover{
+    background: blue;
+    border: 1px solid blue;
+    transition: 0.6s ease-in-out;
+    transform: scale(1.1);
+    color: white;
+}
+/* testimonial */
+section.section_fourth {
+    height: 97vh;
+}
+.testimonial_title>h2 {
+    text-align: center;
+    padding: 80px 0px 0px;
+    font-size: 38px;
+}
+.testimonial_title>p {
+    font-family: 'Poppins';
+    font-size: 15px;
+    text-align: center;
+    margin: -19px 0px 40px;
+}
+
+/* .......testimonial responsive........ */
+
+ 
+  .wrapper{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+  .wrapper .box{
+    background: #fff;
+    padding: 25px;
+    margin-left: 55px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+  }
+  .wrapper .box>p {
+    text-align: justify;
+    margin-left: 13px;
+    font-size: 15px;
+    }
+  .wrapper .box i.quote{
+    font-size: 20px;
+    color: #17a2b8;
+    margin-bottom: 9px;
+  }
+  .wrapper .box .content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  .box .info .name{
+    font-weight: 600;
+    font-size: 17px;
+  }
+  .box .info .job{
+    font-size: 16px;
+    font-weight: 500;
+    color: #17a2b8;
+  }
+  .box .info .stars{
+    margin-top: 2px;
+  }
+  .box .info .stars i{
+    color: #17a2b8;
+  }
+  .box .content .image{
+    height: 75px;
+    width: 75px;
+    padding: 3px;
+    background: #17a2b8;
+    border-radius: 50%;
+  }
+  .content .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  .box:hover .content .image img{
+    border-color: #fff;
+  }
+  @media (max-width: 1045px) {
+    .wrapper .box{
+      width: calc(50% - 10px);
+      margin: 10px 0;
+    }
+  }
+  @media (max-width: 702px) {
+    .wrapper .box{
+      width: 100%;
+    }
+  }  
+  /* footer */
+  footer{
+    position: absolute;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: blue
+    ;
+}
+
+.footer-bottom{
+    background: #131212ec;
+    width: 100vw;
+    padding: 20px 0;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    color: blue;
+    font-weight: 200;
+}
+
+
+/* .............job form..................... */
+
+input[type="submit"] {
+    width: 16%;
+    color: grey;
+}
+
+select#posts {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 2px solid blue;
+    background: #eaeaea;
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: 600;
+    color: grey;
 }
